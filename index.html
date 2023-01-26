@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MONTICELLO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="header ">
+    <div class="container-box container-box-header">
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand justify-content-start" href="#">
+            <img class="logo" src="./img/Logo.png" alt="logo">
+            
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <img src="./img/we-do/burger.png" alt="burger icon">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#use">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link socials" href="#about">
+                  <div class="social"></div>
+                  <!-- <svg class="social">
+                    <use xlink:href="./img/socials/facebook.svg#face"></use>
+                  </svg> -->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link socials" href="#about">
+                  <div class="social2"></div>
+                  <!-- <svg class="social">
+                    <use xlink:href="./img/socials/twitter.svg#twit"></use>
+                  </svg> -->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link socials" href="#about">
+                  <div class="social3"></div>
+                  <!-- <svg class="social">
+                    <use xlink:href="./img/socials/Instagram.svg#inst"></use>
+                  </svg> -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- /.container -->
+
+  </header>
+  <main class="main">
+    <section class="section hero">
+      <div class="container-box"> 
+        <h1>SIMPLE & MODERN</h1>
+        <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+        <a href="#news" class="arrow">
+          <svg class="arrow-svg">
+            <use xlink:href="./img/socials/arrow.svg#arrow-svg"></use>
+          </svg>
+        </a>
+        <!-- /.arrow -->
+      </div>
+    </section>
+    <section id="we-do" class="section we-do">
+      <div class="container-box">
+        <h2>WHAT WE DO</h2>
+        <div class="we-do__container">
+          <div class="photo-part">
+            <div class="image-1"></div>
+            <div class="image-2"></div>
+          </div>
+          <div class="text-part">
+            <p class="suptext">ONE WORLD</p>
+            <h2>TRADE CENTER</h2>
+            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+            <button class="button">MORE DETAILS</button>
+            <div class="location-row">
+              <img class="location-icon" src="./img/we-do/geolocation.png" alt="geolocation icon">
+              <p class="location">New York City, United States - 1776 feet </p>
+            </div>
+          </div>
+        </div>
+        <div class="we-do__container second-part">
+          <div class="text-part">
+            <p class="suptext">INTERNATIONAL</p>
+            <h2>COMMERCE CENTRE</h2>
+            <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+            <button class="button">MORE DETAILS</button>
+            <div class="location-row">
+              <img class="location-icon" src="./img/we-do/geolocation.png" alt="geolocation icon">
+              <p class="location">Hong Kong - 1588 feet</p>
+            </div>
+          </div>
+          <div class="photo-part">
+            <div class="image-3"></div>
+            <div class="image-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news" class="section news">
+      <div class="container-box">
+        <h2>LATEST NEWS</h2>
+        <!-- <div class="card-list">
+          <div class="card-list__item">
+            <div class="image"></div>
+            <div class="card-list-script">
+              <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+            <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+            <div class="author-row">
+              <div class="author-image"></div>
+              <div class="author-text">
+                <p class="author-name">
+                  ALJA BRUN
+                </p>
+                <p class="article-date">20 Jan 2020</p>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+          <div class="card-list__item">
+            <div class="image"></div>
+            <div class="card-list-script">
+              <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+            <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+            <div class="author-row">
+              <div class="author-image"></div>
+              <div class="author-text">
+                <p class="author-name">
+                  ALJA BRUN
+                </p>
+                <p class="article-date">20 Jan 2020</p>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+          <div class="card-list__item">
+            <div class="image"></div>
+            <div class="card-list-script">
+              <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+            <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+            <div class="author-row">
+              <div class="author-image"></div>
+              <div class="author-text">
+                <p class="author-name">
+                  ALJA BRUN
+                </p>
+                <p class="article-date">20 Jan 2020</p>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+
+        </div> -->
+
+      
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="card-list">
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">21 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">21 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">21 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+      
+              </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="10000">
+              <div class="card-list">
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">22 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">22 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">22 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+      
+              </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="10000">
+              <div class="card-list">
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">23 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">23 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">23 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+      
+              </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="10000">
+              <div class="card-list">
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">24 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">24 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">24 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+      
+              </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="10000">
+              <div class="card-list">
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">25 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">25 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="card-list__item">
+                  <div class="image"></div>
+                  <div class="card-list-script">
+                    <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                  <p class="card-text">Free directories: directories are perfect for customers that are searching for...</p>
+                  <div class="author-row">
+                    <div class="author-image"></div>
+                    <div class="author-text">
+                      <p class="author-name">
+                        ALJA BRUN
+                      </p>
+                      <p class="article-date">25 Jan 2020</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                </div>
+      
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev arrow-button-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon zero" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next arrow-button-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon zero" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery">
+      <div class="container-box">
+        <h2>GALLERY</h2>
+        <div class="gallery-list">
+          <div class="gallery-list__item"></div>
+          <div class="gallery-list__item"></div>
+          <div class="gallery-list__item"></div>
+          <div class="gallery-list__item"></div>
+          <div class="gallery-list__item"></div>
+        </div>
+        <button class="button">SEE MORE</button>
+      </div>
+    </section>
+    <section class="section map">
+      <div class="container-box">
+        <h2>GET IN TOUCH</h2>
+        <div class="information-box">
+          <div class="info">
+            <div class="location-row">
+            <img class="location-icon" src="./img/we-do/geolocation.png" alt="geolocation icon">
+            <p class="location">Hong Kong - 1588 feet</p>
+            </div>
+            <div class="phone-row">
+              <img class="location-icon" src="./img/map/phone.png" alt="geolocation icon">
+              <a class="location">+001 356-868-2454</a>
+            </div>
+            <div class="email-row">
+              <img class="location-icon" src="./img/map/email.png" alt="geolocation icon">
+              <a class="location">montichello@service.com</a>
+            </div>
+            <div class="email-row">
+              <img class="location-icon" src="./img/map/time.png" alt="geolocation icon">
+              <a class="location">From 07:05AM to 19:30PM</a>
+            </div>
+          </div>
+
+          <form action="post" class="form">
+
+            <div class="mb-3">
+              
+              <textarea class="form-control line" placeholder="Mollie Medina" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="mb-3">
+              
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
+            <button class="button">SUBMIT</button>
+          </form>
+        </div>
+          
+          
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container-box">
+      <a class="navbar-brand justify-content-start" href="#">
+        <img class="logo" src="./img/Logo.png" alt="logo">
+        
+      </a>
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link socials" href="#about">
+            <div class="social"></div>
+            <!-- <svg class="social">
+              <use xlink:href="./img/socials/facebook.svg#face"></use>
+            </svg> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link socials" href="#about">
+            <div class="social2"></div>
+            <!-- <svg class="social">
+              <use xlink:href="./img/socials/twitter.svg#twit"></use>
+            </svg> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link socials" href="#about">
+            <div class="social3"></div>
+            <!-- <svg class="social">
+              <use xlink:href="./img/socials/Instagram.svg#inst"></use>
+            </svg> -->
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container-box">
+      <p class="copyright">Copyrights © 2020 Montichello</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
