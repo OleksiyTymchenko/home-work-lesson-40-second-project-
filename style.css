@@ -64,7 +64,7 @@ h2 {
 
 /*======================== header ====================================*/
 .header{
-  
+  /* background-color: blue; */
 }
 
 .header .bg-light{
@@ -80,6 +80,8 @@ h2 {
   background-size: cover;
   width: 100%;
   z-index: 10;
+  background: url(./img/hero/bg-hero.png) center top/100% 50rem no-repeat;
+    opacity: 0.5;
 }
 
 .logo{
@@ -90,6 +92,8 @@ h2 {
 .navbar{
   /* background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02); */
   backdrop-filter: blur(4.5px);
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
 }
 
 .nav-item{
@@ -104,8 +108,21 @@ h2 {
   border-bottom: 3px solid linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
 }
 
-.nav-link:hover{
-  border-bottom: 3px solid #F0D3D0;
+.nav-item{
+  display: flex;
+  align-items: center;
+}
+
+.circule{
+  background: url('./img/hero/circule.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 9px;
+  height: 9px;
+}
+
+.nav-item:hover .circule, .nav-item:active .circule{
+  background: url('./img/hero/active-circule.png') center / 100% 100% no-repeat;
+  /* border-bottom: 3px solid #F0D3D0; */
 }
 .social{
   fill: #fff;
@@ -158,9 +175,11 @@ h2 {
 .main{
   z-index: 1;
 }
+
+
 /*======================== hero =====================*/
 .hero{
-  padding: 330px 0 50px;
+  padding: 260px 0 50px;
   background: url('./img/hero/bg-hero.png') center / 100% 100% no-repeat;
   background-size: cover;
   text-align: center;
@@ -178,19 +197,50 @@ h2 {
   margin-bottom: 240px;
 }
 
+.carousel-dark .carousel-caption{
+  color: #fff;
+}
+
 .arrow{
   border: 1px solid #fff;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
-    align-items: center;
+  align-items: center;
     justify-content: center;
 }
 
 .arrow-svg{
   height: 10px;
   width: 10px;
+}
+
+.hero .circule{
+  background: url('./img/hero/circule.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 9px;
+  height: 9px;
+}
+.hero .circule.active{
+  background: url('./img/hero/active-circule.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 9px;
+  height: 9px;
+}
+/*============= slider =============*/
+.slider-image{
+  background-size: cover;
+  opacity: 0;
+}
+
+.hero .carousel-indicators {
+  position: absolute;
+    right: -255px;
+    bottom: 320px;
+    /* margin-right: 286%; */
+    flex-direction: column;
+    align-items: flex-end;
 }
 /*================== we-do ====================*/
 .we-do{
@@ -451,6 +501,9 @@ margin-bottom: 158px;
   width: 10px;height: 10px;
   border: 1px solid #fff;
 }
+.active{
+  border-bottom: none;
+}
 /*=============== gallery ======================*/
 .gallery{
   padding: 150px 0;
@@ -571,3 +624,4 @@ margin-bottom: 158px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
+
