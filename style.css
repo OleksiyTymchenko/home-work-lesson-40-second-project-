@@ -238,7 +238,7 @@ h2 {
   position: absolute;
     right: -255px;
     bottom: 320px;
-    /* margin-right: 286%; */
+    
     flex-direction: column;
     align-items: flex-end;
 }
@@ -517,6 +517,25 @@ margin-bottom: 158px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 214px 214px;
   gap: 10px;
+}
+.gallery-list__item{
+  position: relative;
+}
+.gallery-list__item:hover .box{
+  background-color: #000;
+  opacity: 0;
+  z-index: 1;
+}
+.gallery-list__item:hover .search{
+  position: absolute;
+  top: calc(50% - 70px/2);
+  bottom: calc(50% - 70px/2);
+  left: calc(50% - 70px/2);
+  right: calc(50% - 70px/2);
+  background: url('./img/gallery/search.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
 }
 
 .gallery-list__item:first-child{
